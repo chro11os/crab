@@ -1,7 +1,7 @@
 use std::io;
-fn parser (user_input:&mut) {
-    user_input = &String::new();
+fn parser (user_input:&str) {
     std::io::stdin()
-        .read_line(&mut user_input)
+        user_input = String::new();
+        .read_line(user_input)
         .expect("Could not read user input");
 }
