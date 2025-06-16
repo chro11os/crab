@@ -1,7 +1,10 @@
 use std::io;
-fn parser (user_input:&str) {
+pub fn parser () {
+    let mut user_input = String::new();
     std::io::stdin()
-        user_input = String::new();
-        .read_line(user_input)
+        .read_line(&mut user_input)
         .expect("Could not read user input");
+    
+    print!("{}", "Enter a Integer: ");
+    println!("{}", user_input);
 }
