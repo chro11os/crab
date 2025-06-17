@@ -4,7 +4,8 @@ pub fn parser () {
     std::io::stdin()
         .read_line(&mut user_input)
         .expect("Could not read user input");
-    
-    print!("{}", "Enter a Integer: ");
+    let mut user_input:&str = user_input.trim();
     println!("{}", user_input);
+    user_input = "";
+    
 }
